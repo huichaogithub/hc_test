@@ -14,4 +14,11 @@ public class JacocoTestDemoController {
         System.out.println("hello world");
         return "hello";
     }
+
+
+    @RequestMapping("/test2")
+    public String tets2(){
+        System.out.println("hello world test2");
+        return "hello test2";
+    }
 }
