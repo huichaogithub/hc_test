@@ -1,14 +1,17 @@
 package com.example.jacoco_demo.control;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
-
-@Controller
+@RestController
 public class JacocoTestDemoController {
 
 
-    public void tets(){
-        System.out.println(1234);
+    @RequestMapping("/")
+    public String tets(){
+        System.out.println("hello world");
+        return "hello";
     }
 }
